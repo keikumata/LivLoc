@@ -557,43 +557,66 @@
                                     <constraint firstAttribute="width" constant="46" id="2Wn-Lm-nio"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="Home">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="chs-7c-vdP" kind="show" id="wuC-qg-GDu"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="9H1-VB-wj5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-Mc-eG8">
+                                <rect key="frame" x="237" y="247" width="127" height="58.5"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well shit...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-3c-T6V">
+                                <rect key="frame" x="217" y="356" width="166.5" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BAC is : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj8-PI-OWF">
-                                <rect key="frame" x="36" y="250" width="528" height="58.5"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="50"/>
+                                <rect key="frame" x="181" y="170" width="239" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8JD-XE-ZZg"/>
+                                    <constraint firstAttribute="width" constant="239" id="bKq-rr-yeB"/>
+                                    <constraint firstAttribute="height" constant="65" id="bMj-ME-0J4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-Mc-eG8">
-                                <rect key="frame" x="114" y="326" width="171" height="75"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="50"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Go get help!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-3c-T6V">
-                                <rect key="frame" x="131" y="462" width="99" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bMj-ME-0J4"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Nj8-PI-OWF" firstAttribute="leading" secondItem="KeW-lr-hhj" secondAttribute="leadingMargin" constant="20" id="9dM-Qx-hcN"/>
+                            <constraint firstItem="h8g-Mc-eG8" firstAttribute="top" secondItem="Nj8-PI-OWF" secondAttribute="bottom" constant="17.5" id="9em-tm-zGL"/>
+                            <constraint firstAttribute="centerX" secondItem="a4E-3c-T6V" secondAttribute="centerX" id="LlO-XN-hWS"/>
                             <constraint firstItem="ZTM-tY-N21" firstAttribute="leading" secondItem="KeW-lr-hhj" secondAttribute="leadingMargin" constant="10" id="NAY-n6-52h"/>
-                            <constraint firstAttribute="centerY" secondItem="Nj8-PI-OWF" secondAttribute="centerY" constant="21" id="Q04-Ej-bnG"/>
+                            <constraint firstAttribute="centerY" secondItem="Nj8-PI-OWF" secondAttribute="centerY" constant="100" id="Q04-Ej-bnG"/>
                             <constraint firstItem="ZTM-tY-N21" firstAttribute="top" secondItem="KeW-lr-hhj" secondAttribute="topMargin" constant="15" id="UPO-17-G3Y"/>
-                            <constraint firstItem="Nj8-PI-OWF" firstAttribute="top" secondItem="KeW-lr-hhj" secondAttribute="topMargin" constant="250" id="kEr-b2-Wai"/>
+                            <constraint firstItem="a4E-3c-T6V" firstAttribute="top" secondItem="h8g-Mc-eG8" secondAttribute="bottom" constant="50" id="XFm-Ap-SX0"/>
+                            <constraint firstAttribute="centerX" secondItem="h8g-Mc-eG8" secondAttribute="centerX" id="e3O-oa-Aai"/>
+                            <constraint firstItem="Nj8-PI-OWF" firstAttribute="top" secondItem="KeW-lr-hhj" secondAttribute="topMargin" constant="200" id="kEr-b2-Wai"/>
                             <constraint firstAttribute="centerX" secondItem="Nj8-PI-OWF" secondAttribute="centerX" id="l5m-RG-Y0Y"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9dM-Qx-hcN"/>
+                                <exclude reference="kEr-b2-Wai"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="BACLabel" destination="h8g-Mc-eG8" id="EWz-0i-aeo"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1564" y="409"/>
@@ -692,8 +715,7 @@
         <image name="livercolor.png" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wuC-qg-GDu"/>
         <segue reference="GkT-cH-wGQ"/>
-        <segue reference="bqR-XL-0gn"/>
+        <segue reference="9H1-VB-wj5"/>
     </inferredMetricsTieBreakers>
 </document>

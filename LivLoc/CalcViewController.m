@@ -21,7 +21,7 @@ double shots;
 double hours;
 
 @implementation CalcViewController
-@synthesize beerLabel, wineLabel, shotLabel, hoursLabel, BACoutput;
+@synthesize beerLabel, wineLabel, shotLabel, hoursLabel, BACoutput, BAC;
 // BAC
 @synthesize beerStepper, wineStepper, shotStepper, hoursSlider;
 
@@ -74,7 +74,7 @@ double hours;
     double gramsAlc;
     gramsAlc=(beers+wines+shots)*0.6*23.36;
     waterinbod=self.pounds/2.2046*self.genderconstant*1000;
-    double BAC;
+//    double BAC;
     BAC=((gramsAlc/waterinbod*.806*100)-(0.017*hours));
     if (BAC<0) {
         BAC=0;
@@ -92,12 +92,12 @@ double hours;
 }
 
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if([[segue identifier] isEqualToString:@"ShiaSurprise"])
-//    {
-//        ShiaViewController* destination = [segue destinationViewController];
-//        destination.BAC = self.BAC;
-//    }
-//}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"ShiaSurprise"])
+    {
+        ShiaViewController* destination = [segue destinationViewController];
+        destination.BAC = self.BAC;
+    }
+}
 @end

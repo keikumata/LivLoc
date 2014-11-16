@@ -27,7 +27,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *BACoutput;
 @property double genderconstant;
 @property double pounds;
-//@property double BAC;
+@property double BAC;
 
 - (IBAction)calculate:(UIButton *)sender;
 
