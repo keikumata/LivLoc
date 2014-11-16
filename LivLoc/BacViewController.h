@@ -11,7 +11,7 @@
 @interface BacViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *gender;
-@property (weak, nonatomic) IBOutlet UILabel *showGender;
+//@property (weak, nonatomic) IBOutlet UILabel *showGender;
 - (IBAction)indexChanged:(id)sender;
 
 - (IBAction)setWeight:(UISlider *)sender;
@@ -19,5 +19,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *weight;
 
 @property (weak, nonatomic) IBOutlet UILabel *showWeight;
+
+@property (readwrite, nonatomic) float genderconstant;
+@property (readwrite, nonatomic) double pounds;
 
 @end

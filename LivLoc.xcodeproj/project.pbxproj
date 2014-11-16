@@ -21,6 +21,7 @@
 		638446761A17FFF9003EE369 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638446751A17FFF9003EE369 /* CoreLocation.framework */; };
 		638446781A181991003EE369 /* firstpage.png in Resources */ = {isa = PBXBuildFile; fileRef = 638446771A181991003EE369 /* firstpage.png */; };
 		6384467B1A18334F003EE369 /* BacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384467A1A18334F003EE369 /* BacViewController.m */; };
+		6384467D1A1847EA003EE369 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384467C1A1847EA003EE369 /* CalcViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		638446771A181991003EE369 /* firstpage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firstpage.png; path = ../../firstpage.png; sourceTree = "<group>"; };
 		638446791A18334F003EE369 /* BacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BacViewController.h; sourceTree = "<group>"; };
 		6384467A1A18334F003EE369 /* BacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BacViewController.m; sourceTree = "<group>"; };
+		6384467C1A1847EA003EE369 /* CalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcViewController.m; sourceTree = "<group>"; };
+		6384467E1A18482A003EE369 /* CalcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 		638446461A17CE68003EE369 /* LivLoc */ = {
 			isa = PBXGroup;
 			children = (
+				6384467C1A1847EA003EE369 /* CalcViewController.m */,
+				6384467E1A18482A003EE369 /* CalcViewController.h */,
 				638446791A18334F003EE369 /* BacViewController.h */,
 				6384467A1A18334F003EE369 /* BacViewController.m */,
 				6384464B1A17CE68003EE369 /* AppDelegate.h */,
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				638446501A17CE68003EE369 /* ViewController.m in Sources */,
+				6384467D1A1847EA003EE369 /* CalcViewController.m in Sources */,
 				6384464D1A17CE68003EE369 /* AppDelegate.m in Sources */,
 				6384464A1A17CE68003EE369 /* main.m in Sources */,
 				6384467B1A18334F003EE369 /* BacViewController.m in Sources */,

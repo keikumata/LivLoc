@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LivLoc/BacViewController.m"
-            timestampString = "437797125.959332"
+            timestampString = "437801262.294225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-indexChanged:"
             landmarkType = "5">
          </BreakpointContent>
