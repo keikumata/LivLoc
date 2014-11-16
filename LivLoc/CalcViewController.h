@@ -25,8 +25,10 @@
 @property (weak, nonatomic) IBOutlet UISlider *hoursSlider;
 - (IBAction)setHours:(UISlider *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *BACoutput;
-- (IBAction)calcBAC:(UISlider *)sender;
-@property float genderconstant;
+@property double genderconstant;
 @property double pounds;
+//@property double BAC;
+
+- (IBAction)calculate:(UIButton *)sender;
 
 @end

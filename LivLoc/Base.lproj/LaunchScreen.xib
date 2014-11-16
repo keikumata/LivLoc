@@ -10,17 +10,23 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="836"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="livloc launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="MKB-JN-0gr">
-                    <rect key="frame" x="-18" y="-12" width="516" height="840"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="livloc and prosper.png" translatesAutoresizingMaskIntoConstraints="NO" id="yTD-LA-jlM">
+                    <rect key="frame" x="-8" y="-17" width="480" height="836"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yTD-LA-jlM" secondAttribute="trailing" id="LOD-V9-VJm"/>
+                <constraint firstItem="yTD-LA-jlM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MXP-Xo-RzN"/>
+                <constraint firstItem="yTD-LA-jlM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dm7-Ou-da7"/>
+                <constraint firstAttribute="bottom" secondItem="yTD-LA-jlM" secondAttribute="bottom" id="nZu-Ou-3aC"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="310" y="226"/>
         </view>
     </objects>
     <resources>
-        <image name="livloc launch.png" width="750" height="1334"/>
+        <image name="livloc and prosper.png" width="640" height="1136"/>
     </resources>
 </document>

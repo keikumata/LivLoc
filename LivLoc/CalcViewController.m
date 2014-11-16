@@ -7,7 +7,8 @@
 //
 
 #import "CalcViewController.h"
-#import "BacViewController.h"
+//#import "BacViewController.h"
+#import "ShiaViewController.h"
 
 @interface CalcViewController ()
 
@@ -21,13 +22,13 @@ double hours;
 
 @implementation CalcViewController
 @synthesize beerLabel, wineLabel, shotLabel, hoursLabel, BACoutput;
+// BAC
 @synthesize beerStepper, wineStepper, shotStepper, hoursSlider;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -61,20 +62,42 @@ double hours;
     
 }
 - (IBAction)setHours:(UISlider *)sender {
-    self.hoursLabel.text=[NSString stringWithFormat:@"%d", (int)sender.value];
-    hours=sender.value;
+    int hoursint=0;
+    hoursint=(int)sender.value;
+    hours=(double)hoursint/2;
+    self.hoursLabel.text=[NSString stringWithFormat:@"%0.1f hours", hours];
+    
 }
 
-
-- (IBAction)calcBAC:(UISlider *)sender {
-    
+- (IBAction)calculate:(UIButton *)sender {
     double waterinbod;
     double gramsAlc;
     gramsAlc=(beers+wines+shots)*0.6*23.36;
     waterinbod=self.pounds/2.2046*self.genderconstant*1000;
     double BAC;
-    BAC=(gramsAlc/waterinbod*.806-0.017*hours)/100;
-    self.BACoutput.text=[NSString stringWithFormat:@"BAC: %f", self.pounds];
-    
+    BAC=((gramsAlc/waterinbod*.806*100)-(0.017*hours));
+    if (BAC<0) {
+        BAC=0;
+    }
+    if (self.genderconstant==0 || BAC>1 || self.pounds==0){
+        self.BACoutput.text=[NSString stringWithFormat:@"BAC =  Error"];
+
+    }
+    else if (BAC>0.25&&BAC<=1) {
+        [self performSegueWithIdentifier:@"ShiaSurprise" sender:self];
+    }
+    else {
+    self.BACoutput.text=[NSString stringWithFormat:@"BAC =  %0.03f", BAC];
+    }
 }
+
+
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if([[segue identifier] isEqualToString:@"ShiaSurprise"])
+//    {
+//        ShiaViewController* destination = [segue destinationViewController];
+//        destination.BAC = self.BAC;
+//    }
+//}
 @end

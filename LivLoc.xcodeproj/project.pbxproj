@@ -22,6 +22,9 @@
 		638446781A181991003EE369 /* firstpage.png in Resources */ = {isa = PBXBuildFile; fileRef = 638446771A181991003EE369 /* firstpage.png */; };
 		6384467B1A18334F003EE369 /* BacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384467A1A18334F003EE369 /* BacViewController.m */; };
 		6384467D1A1847EA003EE369 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384467C1A1847EA003EE369 /* CalcViewController.m */; };
+		638446831A1870AF003EE369 /* livercolor.png in Resources */ = {isa = PBXBuildFile; fileRef = 638446821A1870AF003EE369 /* livercolor.png */; };
+		638446851A189059003EE369 /* livloc and prosper.png in Resources */ = {isa = PBXBuildFile; fileRef = 638446841A189059003EE369 /* livloc and prosper.png */; };
+		638446871A18AAE1003EE369 /* ShiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638446861A18AAE1003EE369 /* ShiaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		6384467A1A18334F003EE369 /* BacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BacViewController.m; sourceTree = "<group>"; };
 		6384467C1A1847EA003EE369 /* CalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcViewController.m; sourceTree = "<group>"; };
 		6384467E1A18482A003EE369 /* CalcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcViewController.h; sourceTree = "<group>"; };
+		638446821A1870AF003EE369 /* livercolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = livercolor.png; path = ../../livercolor.png; sourceTree = "<group>"; };
+		638446841A189059003EE369 /* livloc and prosper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "livloc and prosper.png"; path = "../../livloc and prosper.png"; sourceTree = "<group>"; };
+		638446861A18AAE1003EE369 /* ShiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShiaViewController.m; sourceTree = "<group>"; };
+		638446891A18AAFA003EE369 /* ShiaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ShiaViewController.h; path = ../ShiaViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +119,15 @@
 				6384464E1A17CE68003EE369 /* ViewController.h */,
 				6384464F1A17CE68003EE369 /* ViewController.m */,
 				638446511A17CE68003EE369 /* Main.storyboard */,
+				638446861A18AAE1003EE369 /* ShiaViewController.m */,
+				638446891A18AAFA003EE369 /* ShiaViewController.h */,
+				638446821A1870AF003EE369 /* livercolor.png */,
 				638446771A181991003EE369 /* firstpage.png */,
 				638446711A17EC67003EE369 /* liver-acupuncture-gold-coast.jpeg */,
 				6384466D1A17D2A4003EE369 /* LivLoc Logo.png */,
 				638446541A17CE68003EE369 /* Images.xcassets */,
 				638446561A17CE68003EE369 /* LaunchScreen.xib */,
+				638446841A189059003EE369 /* livloc and prosper.png */,
 				6384466F1A17E4BD003EE369 /* livloc launch.png */,
 				638446471A17CE68003EE369 /* Supporting Files */,
 			);
@@ -231,9 +242,11 @@
 			files = (
 				6384466E1A17D2A5003EE369 /* LivLoc Logo.png in Resources */,
 				638446531A17CE68003EE369 /* Main.storyboard in Resources */,
+				638446831A1870AF003EE369 /* livercolor.png in Resources */,
 				638446701A17E4BD003EE369 /* livloc launch.png in Resources */,
 				638446581A17CE68003EE369 /* LaunchScreen.xib in Resources */,
 				638446781A181991003EE369 /* firstpage.png in Resources */,
+				638446851A189059003EE369 /* livloc and prosper.png in Resources */,
 				638446551A17CE68003EE369 /* Images.xcassets in Resources */,
 				638446721A17EC67003EE369 /* liver-acupuncture-gold-coast.jpeg in Resources */,
 			);
@@ -256,6 +269,7 @@
 				638446501A17CE68003EE369 /* ViewController.m in Sources */,
 				6384467D1A1847EA003EE369 /* CalcViewController.m in Sources */,
 				6384464D1A17CE68003EE369 /* AppDelegate.m in Sources */,
+				638446871A18AAE1003EE369 /* ShiaViewController.m in Sources */,
 				6384464A1A17CE68003EE369 /* main.m in Sources */,
 				6384467B1A18334F003EE369 /* BacViewController.m in Sources */,
 			);

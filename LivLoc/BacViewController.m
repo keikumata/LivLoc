@@ -22,6 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIFont *font = [UIFont fontWithName: @"TrebuchetMS-Bold" size:20.0];
+                   //boldSystemFontOfSize:16.0f];
+//    NSLog(@"%@", [UIFont fontNamesForFamilyName:@"Trebuchet MS"]);
+    NSDictionary *attributes = [NSDictionary dictionaryWithObject:font
+                                                           forKey:NSFontAttributeName];
+    [gender setTitleTextAttributes:attributes
+                          forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,31 +46,34 @@
 }
 */
 
-
-
-- (IBAction)setWeight:(UISlider *)sender{
-    self.showWeight.text=[NSString stringWithFormat:@"Weight: %d lbs", (int)sender.value];
-    self.pounds=sender.value;
-
-}
 - (IBAction)indexChanged:(UISegmentedControl *)sender {
+    genderconstant=0;
     switch (self.gender.selectedSegmentIndex) {
         case 0:
-          //  self.showGender.text=@"Woo";
-            genderconstant=.58;
+            //  self.showGender.text=@"Woo";
+                 genderconstant=.58;
             break;
         case 1:
-          //  self.showGender.text=@"Wop";
+            //  self.showGender.text=@"Wop";
             genderconstant=.49;
             break;
         case 2:
-          //  self.showGender.text=@"Wlp";
+            //  self.showGender.text=@"Wlp";
             genderconstant=.54;
             break;
         default:
-            break;
+          
+                    break;
     }
 }
+- (IBAction)setWeight:(UISlider *)sender{
+    self.pounds = sender.value;
+    self.showWeight.text=[NSString stringWithFormat:@"Weight: %d lbs", (int)self.pounds];
+    
+}
+
+
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([[segue identifier] isEqualToString:@"return"])
@@ -74,4 +84,6 @@
         
     }
 }
+
+
 @end
