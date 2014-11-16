@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
@@ -10,31 +11,19 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="836"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livloc and prosper.png" translatesAutoresizingMaskIntoConstraints="NO" id="yTD-LA-jlM">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livloc and prosper.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBb-Gy-uGz">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="836"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="yTD-LA-jlM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IPK-UN-t20"/>
-                <constraint firstAttribute="trailing" secondItem="yTD-LA-jlM" secondAttribute="trailing" id="LOD-V9-VJm"/>
-                <constraint firstItem="yTD-LA-jlM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MXP-Xo-RzN"/>
-                <constraint firstItem="yTD-LA-jlM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Onj-xg-vbV"/>
-                <constraint firstAttribute="trailing" secondItem="yTD-LA-jlM" secondAttribute="trailing" id="Q5H-4w-DWR"/>
-                <constraint firstItem="yTD-LA-jlM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dm7-Ou-da7"/>
-                <constraint firstAttribute="bottom" secondItem="yTD-LA-jlM" secondAttribute="bottom" id="nZu-Ou-3aC"/>
-                <constraint firstAttribute="bottom" secondItem="yTD-LA-jlM" secondAttribute="bottom" id="sPD-IQ-3Ua"/>
+                <constraint firstAttribute="bottom" secondItem="ZBb-Gy-uGz" secondAttribute="bottom" id="5hl-5r-yIs"/>
+                <constraint firstItem="ZBb-Gy-uGz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7If-n6-rfG"/>
+                <constraint firstAttribute="trailing" secondItem="ZBb-Gy-uGz" secondAttribute="trailing" id="Ioy-CG-iqg"/>
+                <constraint firstItem="ZBb-Gy-uGz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MDd-8a-92l"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="LOD-V9-VJm"/>
-                    <exclude reference="MXP-Xo-RzN"/>
-                    <exclude reference="dm7-Ou-da7"/>
-                    <exclude reference="nZu-Ou-3aC"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="310" y="226"/>
         </view>
     </objects>

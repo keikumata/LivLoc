@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -119,8 +120,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="livercolor.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIc-6W-Yw8">
-                                <rect key="frame" x="-208" y="-173" width="667" height="765"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livercolor.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIc-6W-Yw8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight (lbs)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLC-LN-DTH">
                                 <rect key="frame" x="215" y="365" width="240" height="34"/>
@@ -185,8 +186,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="bqR-XL-0gn"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Wtj-7a-bHB">
-                                <rect key="frame" x="174.5" y="137" width="250" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Wtj-7a-bHB">
+                                <rect key="frame" x="174" y="137" width="250" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="4EZ-lN-cxK"/>
                                     <constraint firstAttribute="width" constant="250" id="Ko3-YD-b5b"/>
@@ -205,8 +206,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Wtj-7a-bHB" secondAttribute="centerX" id="4ql-6D-12P"/>
+                            <constraint firstAttribute="centerX" secondItem="NIc-6W-Yw8" secondAttribute="centerX" id="88r-tD-Vnd"/>
                             <constraint firstItem="7dd-ma-1b9" firstAttribute="leading" secondItem="VgF-fy-mlR" secondAttribute="leadingMargin" id="91p-is-afd"/>
                             <constraint firstItem="m6u-J3-TWg" firstAttribute="top" secondItem="VgF-fy-mlR" secondAttribute="topMargin" constant="15" id="9h3-un-L2E"/>
+                            <constraint firstAttribute="centerY" secondItem="NIc-6W-Yw8" secondAttribute="centerY" id="9t5-L7-Vi0"/>
                             <constraint firstAttribute="centerX" secondItem="oLC-LN-DTH" secondAttribute="centerX" constant="-35" id="B7p-FZ-ZD3"/>
                             <constraint firstItem="jR9-zj-Kwb" firstAttribute="top" secondItem="oLC-LN-DTH" secondAttribute="bottom" constant="50" id="CrU-18-Vax"/>
                             <constraint firstItem="NIc-6W-Yw8" firstAttribute="height" secondItem="VgF-fy-mlR" secondAttribute="height" id="OsP-Xy-6qi"/>
@@ -541,7 +544,6 @@
         <!--Shia View Controller-->
         <scene sceneID="SiW-Va-GrY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oGj-0P-r7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController modalTransitionStyle="crossDissolve" id="ykY-Mj-fJV" customClass="ShiaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fhA-bv-0Zh"/>
@@ -618,6 +620,7 @@
                         <outlet property="BACLabel" destination="h8g-Mc-eG8" id="EWz-0i-aeo"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGj-0P-r7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1564" y="409"/>
         </scene>
@@ -634,7 +637,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2nk-M7-TKH">
-                                <rect key="frame" x="0.0" y="43" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzk-iX-doH">
                                 <rect key="frame" x="16" y="28" width="35" height="30"/>
@@ -650,7 +653,7 @@
                         <constraints>
                             <constraint firstItem="2nk-M7-TKH" firstAttribute="height" secondItem="H9u-Mq-A7A" secondAttribute="height" id="3IJ-cg-U4q"/>
                             <constraint firstItem="2nk-M7-TKH" firstAttribute="width" secondItem="H9u-Mq-A7A" secondAttribute="width" id="5ub-UR-eGg"/>
-                            <constraint firstAttribute="centerY" secondItem="2nk-M7-TKH" secondAttribute="centerY" constant="-43" id="WcX-BI-ERW"/>
+                            <constraint firstAttribute="centerY" secondItem="2nk-M7-TKH" secondAttribute="centerY" id="WcX-BI-ERW"/>
                             <constraint firstAttribute="centerX" secondItem="2nk-M7-TKH" secondAttribute="centerX" id="YzI-Gl-70V"/>
                         </constraints>
                     </view>
@@ -677,10 +680,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liver-acupuncture-gold-coast.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="4j3-ut-GcP">
                                 <rect key="frame" x="0.0" y="20" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6d-pK-oDZ">
-                                <rect key="frame" x="451" y="70" width="113" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6d-pK-oDZ">
+                                <rect key="frame" x="479" y="47" width="113" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="65L-uz-hqZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="9fF-3M-UU2"/>
                                     <constraint firstAttribute="width" constant="113" id="Von-dp-EQs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="24"/>
@@ -700,9 +704,18 @@
                             <constraint firstAttribute="centerX" secondItem="4j3-ut-GcP" secondAttribute="centerX" id="O30-4u-a6d"/>
                             <constraint firstAttribute="centerY" secondItem="4j3-ut-GcP" secondAttribute="centerY" constant="-20" id="Qrj-Cm-ADp"/>
                             <constraint firstItem="4j3-ut-GcP" firstAttribute="width" secondItem="hDG-dk-the" secondAttribute="width" id="dz9-9u-E8q"/>
+                            <constraint firstItem="k6d-pK-oDZ" firstAttribute="leading" secondItem="hDG-dk-the" secondAttribute="leadingMargin" constant="450" id="fwo-Ww-RsS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k6d-pK-oDZ" secondAttribute="trailing" constant="20" id="oiO-iJ-RLM"/>
                             <constraint firstItem="4j3-ut-GcP" firstAttribute="height" secondItem="hDG-dk-the" secondAttribute="height" id="thD-8k-hbt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k6d-pK-oDZ" secondAttribute="trailing" id="ya9-5j-dlq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bki-oi-xiR"/>
+                                <exclude reference="fwo-Ww-RsS"/>
+                                <exclude reference="oiO-iJ-RLM"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cv4-im-8hS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -715,7 +728,7 @@
         <image name="livercolor.png" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Jep-mX-AQS"/>
         <segue reference="GkT-cH-wGQ"/>
-        <segue reference="9H1-VB-wj5"/>
     </inferredMetricsTieBreakers>
 </document>
